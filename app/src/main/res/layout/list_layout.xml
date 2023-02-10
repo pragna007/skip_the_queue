@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:background="@color/pink"
+        android:clickable="true"
+        android:focusable="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/pdlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/pricetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdlname"
+            android:layout_marginTop="7dp"
+            android:text="Price:"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pdlprice"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pdlname"
+            android:layout_toRightOf="@+id/pricetext"
+            android:layout_marginTop="7dp"
+            android:text="Product Price"
+            android:textColor="@color/cardview_dark_background"
+
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/pdlname"
+            android:background="@color/white"
+            android:src="@drawable/buttton_minus" />
+
+        <TextView
+            android:id="@+id/pdlquantity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/dec"
+            android:gravity="center"
+            android:text="100"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:layout_toRightOf="@+id/pdlquantity"
+            android:background="@color/white"
+            android:src="@drawable/button_pressed" />
+
+        <TextView
+            android:id="@+id/totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/plus"
+            android:gravity="center"
+            android:text="tprice"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

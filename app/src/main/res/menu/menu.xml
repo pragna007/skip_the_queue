@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_bill"
+        android:icon="@drawable/ic_content_paste_black_24dp"
+        android:title="INVOICE"/>
+    <item
+        android:id="@+id/nav_payment"
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:title="PAYMENT"/>
+
+    <item android:id="@+id/nav_scan"
+        android:icon="@drawable/ic_settings_overscan_black_24dp"
+        android:title="SCAN"/>
+
+</menu>
